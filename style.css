@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #ffe6f2; /* Light pink background */
+  }
+  
+  .calculator {
+    background: #ffcce0; /* Soft pink calculator background */
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .display {
+    background: #ff80bf; /* Vibrant pink for display */
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: #ffb3d9; /* Medium pink for grid background */
+    align-items: stretch;
+  }
+  
+  .btn {
+    background: #ffe6f2; /* Light pink for buttons */
+    border: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background: #ff99cc; /* Highlighted pink on hover */
+    color: #fff;
+  }
+  
+  .operator {
+    background: #ff4da6; /* Darker pink for operators */
+    color: #fff;
+  }
+  
+  .operator:hover {
+    background: #ff3399; /* Slightly darker pink on hover for operators */
+  }
+  
+  .equal {
+    background: #ff0066; /* Bold pink for equal button */
+    color: #fff;
+    grid-column: span 4;
+  }
+  
+  .equal:hover {
+    background: #e60059; /* Slightly darker shade on hover */
+  }
+  
+  .zero {
+    grid-column: span 2; /* Spans two columns */
+  }
+  
+  @media (max-width: 600px) {
+    .display {
+      font-size: 2rem;
+    }
+  
+    .btn {
+      font-size: 1.2rem;
+      padding: 15px;
+    }
+  }
+  
+  
+  
